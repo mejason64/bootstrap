@@ -144,7 +144,7 @@
 	  <div class="col-md-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi blanditiis quas velit at ex doloremque, reiciendis omnis, tempore fugiat aliquam, doloribus quos harum dolores voluptas accusantium id alias numquam libero!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque magni, modi pariatur, quod ipsam minus aperiam eius dolore similique et laudantium odio. Laborum ea exercitationem porro, maxime voluptatum voluptatibus vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro necessitatibus, consequuntur doloremque! Harum, obcaecati sit. Tempora adipisci illo, architecto corrupti provident, perferendis. Ad a modi laboriosam cumque. Excepturi placeat, perspiciatis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas incidunt eaque facilis, eos, harum voluptate nam nemo nulla sequi nisi. Dolore necessitatibus libero voluptas rem recusandae consequatur sequi accusantium nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsa error unde sequi voluptatem dolorem commodi ut perferendis eius! Iure nobis nostrum, nisi aut laborum. Dolorem debitis ipsam at iste.</div>
 	</div>
 	<div class="row">
-  <h1>PHOTOS</h1>
+  <h2>Viewers photos</h2>
 	  <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam necessitatibus eos voluptates recusandae optio iusto vel tenetur repudiandae, tempore facilis delectus quas blanditiis sunt consectetur accusamus ratione quo iste, officia!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa eaque quisquam iste eligendi cumque, excepturi aperiam ducimus illo fugiat, placeat veritatis temporibus repellendus non. Dolorum dolores quis ut eligendi explicabo!
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis perspiciatis quidem laudantium, consequatur minima sunt culpa accusantium architecto. Dolor facilis voluptatem excepturi, perferendis in natus ratione corrupti aperiam, impedit voluptas!Lorem</div>
 	  <div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque molestiae illum sapiente cupiditate suscipit, iusto quos voluptate consectetur! Recusandae culpa animi assumenda eligendi qui, voluptatum eius molestiae maiores, incidunt architecto!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est doloribus ipsum velit itaque deleniti corporis numquam dolores. Mollitia quas asperiores saepe consectetur voluptate quae inventore, alias perferendis dolorum facere, et.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur culpa recusandae est debitis perferendis, consequatur laborum ipsa at aliquid quibusdam quo incidunt cupiditate, impedit vel corporis accusamus, facilis deleniti amet.</div>
@@ -157,44 +157,54 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
     <h3>Contact Us</h3>
-    <form>
-    <div class="row">
-    <div class="col-md-6">
-        <div class="form-group">
-       <label for="Name">Name</label>
-      <input class="form-control" type="text">
-    </div>
-    </div>
-    </div>
+
+    <form action="submit" class="cmxform" method="get" id="commentForm">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="fName">First Name(required)</label>
+            <input class="form-control" min-length="2" placeholder="Enter your first name here" type="text" required >
+          </div>
+        </div>
+
+         <div class="col-md-6">
+          <div class="form-group">
+            <label for="lName">Last Name(required)</label>
+            <input class="form-control" min-length="2" placeholder="Enter your last name here" type="text" required >
+          </div>
+        </div>
+      </div>
   
 
+
+
     <div class="row">
-    <div class="col-md-6">
-    <div class="form-group">
-    <label for="email">email</label>
-      <input class="form-control" type="email">    
-    </div>
-    </div>
-    </div>
+      <div class="col-md-6">
+        <div class="form-group">
+        <label for="email">email(required)</label>
+         <input class="form-control" type="email" placeholder="Enter your e-mail here" required>    
+        </div>
+      </div>
+      
     
 
-     <div class="row">
-    <div class="col-md-6">
-    <div class="form-group">
-    <label for="Phone Number">Phone Number</label>
-      <input class="form-control" type="Number">    
-    </div>
-    </div>
+     
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="Phone Number">Phone Number(optional)</label>
+          <input class="form-control" type="Number">    
+        </div>
+      </div>
     </div>
 
 
-     <div class="row">
-    <div class="col-md-6">
-    <div class="form-group">
-    <label for="message">Message</label>
-      <textarea name="message" class="form-control"></textarea>  
-    </div>
-    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label for="message">Your comments(required)</label>
+          <textarea name="message" class="form-control" required></textarea>  
+        </div>
+      </div>
     </div>
 
      <div class="modal-footer">
@@ -215,6 +225,10 @@
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="boots/js/bootstrap.js"></script>
+<script src="plugins/jquery.validate.min.js"></script>
+
+<script>$("#commentForm").validate();
+</script>
 
 
 </body>
