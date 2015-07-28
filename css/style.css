@@ -1,33 +1,8 @@
 /*my dev scss file*/
+div {
+  padding: 5px 5px;
+}
+
 .center-img {
   margin: 0 auto;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.green {
-  background-color: green;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.purple {
-  background-color: purple;
-}
-
-h1 {
-  background-color: #40bfbf;
-  text-align: center;
 }
